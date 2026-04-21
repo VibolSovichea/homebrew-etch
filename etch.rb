@@ -5,21 +5,21 @@
 class Etch < Formula
   desc "A terminal note-taking app inspired by Khmer wall carvings"
   homepage "https://github.com/vibolsovichea/etch"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vibolsovichea/etch/releases/download/v0.1.2/etch_0.1.2_darwin_amd64.tar.gz"
-      sha256 "b2c8effdcb055fca431a90b8040197443e108d42be98ccbcc58b51b87c1a5c1d"
+      url "https://github.com/vibolsovichea/etch/releases/download/v0.2.0/etch_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5ef8cfc4f6a87e40782d8467683f2e956e33f15ff9849cfa56ab8ddf505a401b"
 
       define_method(:install) do
         bin.install "etch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vibolsovichea/etch/releases/download/v0.1.2/etch_0.1.2_darwin_arm64.tar.gz"
-      sha256 "5186ee4599f7946840e869fac02bf8edc375a48c2aaf8ab1ca7fccf6ed65d3d8"
+      url "https://github.com/vibolsovichea/etch/releases/download/v0.2.0/etch_0.2.0_darwin_arm64.tar.gz"
+      sha256 "3ec9222de851331a84595b8ea7ac6df7b74c8859a109c1f5eed104cc786f29c5"
 
       define_method(:install) do
         bin.install "etch"
@@ -29,15 +29,15 @@ class Etch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vibolsovichea/etch/releases/download/v0.1.2/etch_0.1.2_linux_amd64.tar.gz"
-      sha256 "6841020a6c7634d229a1efa82a17b49754419bd369043f9c18bc3d256d5cc74b"
+      url "https://github.com/vibolsovichea/etch/releases/download/v0.2.0/etch_0.2.0_linux_amd64.tar.gz"
+      sha256 "6f9d9ba288abe3c965d636b00772c89d76a65b3b235a6e5bb6e027b6ade41f22"
       define_method(:install) do
         bin.install "etch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vibolsovichea/etch/releases/download/v0.1.2/etch_0.1.2_linux_arm64.tar.gz"
-      sha256 "8d1bf4b6b955aae841b97ff35f28b6e4763e03008d855c57c108711e6409d4f4"
+      url "https://github.com/vibolsovichea/etch/releases/download/v0.2.0/etch_0.2.0_linux_arm64.tar.gz"
+      sha256 "4db317f71c978febea721b3d9b8001af96c2056aabf99a8b950a1f0d67e0bb42"
       define_method(:install) do
         bin.install "etch"
       end
